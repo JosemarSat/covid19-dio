@@ -8,14 +8,15 @@ import {
 } from './style'
 
 function Card({ value, label, color }) {
-  return (
-    <CardUI>
-      <CardContentStyled color={color}>
-        <ValueStyled>{value.toLocaleString('pt-BR')}</ValueStyled>
-        <LabelStyled>{label}</LabelStyled>
-      </CardContentStyled>
-    </CardUI>
-  )
+    
+    return (
+      <CardUI>    
+        <CardContentStyled color={color}>      
+            <ValueStyled>{value}</ValueStyled>            
+            <LabelStyled>{label}</LabelStyled>
+        </CardContentStyled>
+      </CardUI>
+    )
 }
 
 export default memo(Card)
